@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <title>FREE SMS API - SEND SMS FROM THE WEB OR APP</title>
+</head>
+
+<style>
+    .footer a:hover{
+      box-shadow: inset 0 0 0 5em rgba(255, 255, 255, 0.3);
+      color: white;
+      border-radius: 10px;
+    }
+    .footer a{
+      color: white;
+      border-radius: 10px;
+    }
+      
+    
+   </style>
+
+<body>
+    
+
+    <nav class="navbar navbar-expand-lg  " style= "background-color: rgb(255, 255, 255);"  >
+          
+        <a class="navbar-brand " href="#"><img style="margin-left: 35px;"src="images/logo2.png" width="220px" alt=""></a>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#NAV">
+            <span class="navbar-toggler-icon" style="border: 5px solid black;background-color: white;"></span>
+          </button>
+
+    <div class="container-fluid" style="display: block;" id="NAV">
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav " style="font-size: 15px;">
+            <li class="nav-item" > 
+                <a class="nav-link" href="" style="color: gray;">Support Chat</a>
+            </li>
+            <li class="nav-item" > 
+                <a class="nav-link" href="" style="color: gray;">Serices Status</a>
+            </li>
+        </ul>
+    </div>
+
+
+     <div class="collapse navbar-collapse justify-content-end" id="NAV">
+            <ul class="navbar-nav " style="margin-right: 0px; font-size: 15px;color: white;">
+                <li class="nav-item" style="margin-right: 30px;"> 
+                    <a class="nav-link" href="index.html" style="color: black;font-weight: bold;">WEB HOSTING</a>
+                </li>
+                <li class="nav-item" style="margin-right: 30px;"> 
+                    <a class="nav-link" href="vps.html" style="color: black;font-weight: bold;">VPS</a>
+                </li>
+                <li class="nav-item" style="margin-right: 30px;"> 
+                    <a class="nav-link" href="smsapi.html" style="color: black;font-weight: bold;">SMS API</a>
+                </li>
+                <li class="nav-item" style="margin-right: 30px;"> 
+                    <a class="nav-link" href="" style="color: black;font-weight: bold;">PRICE</a>
+                </li>
+                <li class="nav-item dropdown " style="margin-right: 30px;">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="color: black;font-weight: bold;">HOW TO</a>
+                        <ul class="dropdown-menu dropstart">
+                          <li><a class="dropdown-item" href="#">Buy domain and Hostinf</a></li>
+                          <li><a class="dropdown-item" href="#">Buy hosting Only</a></li>
+                          <li><a class="dropdown-item" href="#">Transfer to yegara</a></li>
+                          <li><a class="dropdown-item" href="#">Use SMS GETWAY /API </a></li>
+                        </ul>
+                </li>
+                <li class="nav-item" style="margin-right: 30px;">
+                      <button class="bg-warning mt-2" style="width: 100px;height: 30px;border-radius: 7px;"> Login </button>  
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    
+      <div class="container-fluid " style= "background-color: white;color: rgb(92, 92, 92);" >
+        <div class="row">
+           <div class="col-lg-8" style="margin-top: 60px; margin-left: 10px;max-width: 800px;">
+              <h1 style="color: aqua;">SMS API GATEWAY</h1>
+              <h1>SEND OTP & MORE TO ETHIOPIA</h1>
+              <h3>FROM YOUR WEBSITES AND APPS</h3>
+              <p style="margin: 20px;font-size: 20px;">Sending SMS to Ethiopia is made simple via Yegara SMS API Gateway. With our SMS Gateway API for Ethiopia, you can get started right now.</p>
+              <div class="d-grid" style="border: 2px aqua solid;max-width: 705px;margin-top:20px;margin-bottom:20px;">
+                <input style="height: 50px;" type="text" placeholder="Your Domain Name (example.com)">
+              </div>
+              <button style="background-color: aqua;height:50px;width:400px;color: white;font-weight: bold;" class="btn">CONNECT NEW DOMAIN ( FREE )</button>
+              <button style="width: 300px;height:50px;border:solid 1px gray;color: aqua;font-weight: bold;" class="btn btn-white">LOGIN</button>
+           </div>
+           <div class="col-lg-4" style="background-color: white;border-radius: 10px;margin-top: 60px;color: gray;text-align: center;">
+              <img class="img-fluid" width="10000px" src="images/phone_otp_mockup_4.png" alt="">
+           </div>
+        </div>
+        <br><br>
+    </div>
+
+    <div class="container-fluid" style="background-color: gainsboro;">
+        <div class="container">
+        <div class="row mt-4" style="margin-left: 20px;">
+            <div class="col-lg-5">
+                <img  class="img-fluid"   src="images/phone_mokeup_yegara_sms.png" alt="">
+            </div>
+            <div class="col-lg-7 justify-content-center " style="margin-left: 0px;max-width:700px;">
+                <div class="container mt-5">
+                <img  class="img-fluid" width="200px" src="images/logo-woocommerce.svg" alt="">
+                <h2 style="color: grey;font-weight: light;">EASY INTEGRATION FOR YOUR</h2>
+                <h2 style="color: rgb(0, 206, 206);font-weight: light;font-size: 37px;">WordPress eCOMMERCE WEBSITE</h2>
+                <p style="font-size: 18px;">Yegara SMS plugin for WooCommerce Sends SMS notifications to your clients for order status changes. You can also receive an SMS message when a new order is received.</p>
+
+                <div class="container-fluid" style="display: inline-flex;font-size: 16px;margin-top: 20px;">
+                    <ul>
+                       <li>Get new orders Notification</li>
+                       <li> Pending Payment Message</li>
+                       <li>On-Hold message</li>
+                    </ul>
+                    <ul style="margin-left: 60px;">
+                       <li>Order Processing message</li>
+                       <li>Order Completed message</li>
+                       <li>Order Cancelled message</li>
+                    </ul>
+                </div>
+
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-fluid" style="background-image: linear-gradient(to right,rgb(48, 204, 204), rgb(84, 84, 185));">
+        <div class="container" style="padding-top: 100px;color: white;">
+            <h2 style="text-align: center;">Connect with our API & start sending today. </h2>
+            <p style="text-align: center;margin-top: 30px;"> Easily SMS-enable your website, application or customer relationship management platform.</p>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-lg" >
+                        <div >
+                            <img style="width:90px; padding: 20px;" class="img-fluid" src="images/key.png" alt="">
+                        </div>
+                        <h2>Verify Your Domain</h2>
+                            <ul> 
+                                <li style="font-size: 18px;"> Get a Free API KEY</li>
+                            </ul>
+                        <p style="max-width: 280px;font-size: 20px;">Our FREE API is available to all accounts, or New verified Domains.</p>    
+                    </div>
+                    <div class="col-lg">
+                        <div >
+                            <img style="width:90px; padding: 22px;" class="img-fluid" src="images/testing-tube.png" alt="">
+                        </div>
+                        <h2>Test API Endpoints</h2>
+                            <ul> 
+                                <li style="font-size: 20px;">Select a Template to use</li>
+                            </ul>
+                        <p style="max-width: 280px;font-size: 22px;"> Generate a Link to test and check if everything works as we expected.</p>    
+                    </div>
+                    <div class="col-lg">
+                        <div >
+                            <img style="width:90px; padding: 20px;" class="img-fluid" src="images/opposite-arrows-of-angles-pointing-to-sides.png" alt="">
+                        </div>
+                        <h2>Start Sending </h2>
+                             <ul> 
+                                <li style="font-size: 20px;">Write or use the Code Snippet</li>
+                            </ul>
+                        <p style="max-width: 280px;font-size: 22px;"> Send SMS using your code or our wordpress plugin.</p>    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </div>
+
+    <div class="container-fluid" style="background-color: rgb(228, 228, 228);">
+         <h2 style="text-align: center;color: gray;padding-top: 80px;font-weight: bold;">FREE SMS TEMPLATES</h2>
+         <p style="text-align: center;color:gray;font-size: 18px;padding: 20px;">Use any of our predefined Templates that are perfect for any occation.</p>
+             <ul class="nav nav-pills justify-content-center">
+                <li class="nav-item"> <a data-bs-toggle="pill" class="active nav-link" href="#API_Template"> API Template </a> </li>
+                <li class="nav-item"> <a data-bs-toggle="pill" class="nav-link" href="#WORDPRESS"> WORDPRESS</a> </li>
+             </ul>   
+       
+                 <div class="container justify-content-center" >
+                    <div class="row gap-5" >
+                        <div class="col-lg" style="background-color: white;margin: 40px;border-radius: 15px;padding:20px;">
+                           <p>Your Zenach Wear OTP is: 4568</p>
+                           <p>OTP / 2FA</p>
+                        </div>
+                        <div class="col-lg" style="background-color: white;margin: 40px;border-radius: 15px;padding:20px;">
+                            <p>Use 4568 for 2FA on Zenach Wear.</p>
+                           <p>OTP / 2FA</p>
+                        </div>
+                    </div>
+                    <div class="row gap-5">
+                        <div class="col-lg" style="background-color: white;margin: 40px;border-radius: 15px;padding:20px;">
+                          <p>Welcome aboard Ibrahim! We are glad to have you as a part of our community. Zenach Wear </p>
+                             <p>Welcome</p>
+                        </div>
+                        <div class="col-lg" style="background-color: white;margin: 40px;border-radius: 15px;padding:20px;">
+                            <p>Thank you Ibrahim for registering with Zenach Wear! Your account has been successfully created.</p>
+                            <p>Welcome</p>
+                        </div>
+                    </div>
+                    <div class="row gap-5">
+                        <div class="col-lg" style="background-color: white;margin: 40px;border-radius: 15px;padding:20px;">
+                           <p>Hi, Ibrahim, This is to remind you about your appointment for Custom Fitting on Dec 9 at 9:00 PM at Zenach Wear</p>
+                           <p>Reminder</p>
+                        </div>
+                        <div class="col-lg" style="background-color: white;margin: 40px;border-radius: 15px;padding:20px;">
+                            <p>Hi, Ibrahim, We look forward to seeing you tomorrow Dec 9 at 9:00 PM for your Pick UP at Zenach Wear</p>
+                            <p>Reminder</p>
+                        </div>
+                    </div>
+                    <div class="row gap-5">
+                        <div class="col-lg" style="background-color: white;margin: 40px;border-radius: 15px;padding:20px;">
+                        <p>Thank you for your purchase. We have received your payment for 4568. Zenach Wear</p>
+                        <p>Shopping</p>
+                        </div>
+                        <div class="col-lg" style="background-color: white;margin: 40px;border-radius: 15px;padding:20px;">
+                          <p>Your order has been successfully placed. Your order number is 4568. Zenach Wear</p>
+                          <p>Shopping</p>
+                        </div>
+                    </div>
+                    <div class="row gap-5">
+                        <div class="col-lg" style="background-color: white;margin: 40px;border-radius: 15px;padding:20px;">
+                            <p>Confirmation from Zenach Wear. Thanks for booking an appointment with us! We look forward to seeing you.</p>
+                            <p>Confirmation</p>
+                        </div>
+                        <div class="col-lg" style="background-color: white;margin: 40px;border-radius: 15px;padding:20px;">
+                            <p>Your reservation has been confirmed! Thank you for taking part. Zenach Wear.</p>
+                            <p>Confirmation</p>
+                        </div>
+                    </div>
+                
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid">
+        <div class="container justify-content-center " style="max-width: 850px;color: gray; font-size: 18px;padding-top: 100px;">
+            <h1 style="font-size: 50px;">You Might want to Know ...</h1>
+            <div class="container"style="border-left: 3px solid gray ; border-radius: 20px;padding: 20px;margin-top:50px;" >
+                <p style="font-weight: bold;">How Do I Get Started:</p>
+                <p> If you have a WordPress eCommerce website , you can simply install our plugin and start sending SMS.</p>
+                <p>You can also use out API to send from your custom website or APP . You simply Need to Generate a token for the domain and you are good to go. Refer to our Getting Started With Our SMS API guide.</p>
+            </div>
+            <div class="container"style="border-left: 3px solid gray ; border-radius: 20px;padding: 20px;margin-top:50px;">
+                <p style="font-weight: bold;">How Much Does It COST:</p>
+                <p> The SMS GATEWAY is provided for FREE with all your domains. If your domain is not registered with us , you can simply verify your ownership and start sending</p>
+            </div>
+            <div class="container"style="border-left: 3px solid gray ; border-radius: 20px;padding: 20px;margin-top:50px;">
+                <p style="font-weight: bold;">How many SMS can I send:</p>
+                <p>We did not sent a limit, but it is Not UNLIMTED</p>
+            </div>
+            <div class="container"style="border-left: 3px solid gray ; border-radius: 20px;padding: 20px;margin-top:50px;">
+                <p style="font-weight: bold;">What Kind Of Message Can I Send:</p>
+                <p>You can only Send from our predefined Templates using a FREE alphanumeric sender ID. We believe the templates provided address most use cases. If you think we missed something critical , Let us Know</p>
+                <p>If you need to compose Custom SMS , BULK SMS, or have your own Custom Sender ID we can help you set up with our partner easily.                </p>
+            </div>
+            <div class="container"style="border-left: 3px solid gray ; border-radius: 20px;padding: 20px;margin-top:50px;">
+                <p style="font-weight: bold;">Who Can use This SMS GATEWAY and API</p>
+                <p>We wanted to make integrating SMS with your website and application as simple as possible. This is provided as a solution for small businesses and developers who don't have the resource or time to develop their own SMS Gateway.</p>
+                <p>If you are an established business and SMS adds a real value to your business, please consider working with our Partner to implement a proper SMS strategy.</p>
+            </div>
+         
+        </div>
+        <br><br><br><br>
+    </div>
+
+
+    <footer class="container-fluid footer" style="background-color: rgb(63, 63, 77);">
+        <div class="container-fluid" >
+            <div class="row" >
+                <div class="col-lg-4 mt-6" style="margin-top: 30px;max-width: 400px;color: rgb(148, 148, 168);">
+                  <img style="margin-bottom:  20px;" class="img img-fluid" src="images/header_light_434x120.png" width="200px" alt="">
+                  <p>Yegara (የጋራ) Web Host : From website design companies in Ethiopia to an individual looking for a fully loaded website hosting plan affordable and on a budget, Yegara (የጋራ) provides you with everything you need for your website right here in Addis Ababa.</p>
+                  <br>
+                  <p>We accept Payment Through The Following Ethiopian Banks. You can use your Mobile Banking, Internet Banking or make a Cash Deposit:</p>
+                 <br> <img  class="img img-fluid" src="images/all_banks.webp" alt="" width="450px">
+                </div>
+                <div class="col-lg-3 mt-6" style="margin-top: 50px">
+  
+                  <ul class="nav flex-column" style="max-width: 300px;color: black;margin-left: 30px;">
+                      <li><header style="margin-bottom: 10px;color: gray;font-weight: bolder;">CONNECT</header></li>
+                      <li class="nav-item"> <a class="nav-link" href="">FACEBOOK | @yegarawebhost </a> </li>
+                      <li class="nav-item"><a class="nav-link" href="">TELEGRAM | @yegarawebhost </a> </li>
+                      <li class="nav-item"><a class="nav-link" href="">info@yegara.com</a> </li>
+                      <li class="nav-item"><a class="nav-link" href=""> 0960 17 17 17 </a></li>
+                      <li class="nav-item"><a class="nav-link" href=""> Yeha comrecial center <br> 2nd Floor , Stadium <br> Addis Ababa , Ethiopia</a></li>
+                  </ul>
+                   </div>
+  
+  
+                  <div class="col-lg-3 mt-6" style="margin-top: 50px;margin-left: 0px;">
+                  <ul class="nav flex-column" style="max-width: 300px;color: black;margin-left: 30px;">
+                      <li class="nav-item"><header style="margin-bottom: 10px;color: gray;font-weight: bolder;">SERVICES</header></li>
+                      <li class="nav-item"><a class="nav-link" href="">Shared Hosting</a> </li>
+                      <li class="nav-item"><a class="nav-link" href="">Wordpress new</a> </li>
+                      <li class="nav-item"><a class="nav-link" href="">SMS API FREE</a> </li>
+                      <li class="nav-item"><a class="nav-link" href="">  Business Emails </a></li>
+                      <li class="nav-item"><a class="nav-link" href=""> Free SSL certificate </a> </li>
+                      <li class="nav-item"><a class="nav-link" href="">Order cPanel </a> </li>
+                      <li class="nav-item"><a class="nav-link" href="">Domain Name Registration</a> </li>
+                      <li class="nav-item"><a class="nav-link" href="">Transfer Domain </a></li>
+                   </ul>
+                   </div>
+  
+                   <div class="col-lg-2 mt-6 " style="margin-top: 50px;margin-left: 0px;">
+                   <ul class="nav flex-column " style="max-width: 300px;color: black;margin-left: 30px;">
+                      <li><header style="margin-bottom: 10px;color: gray;font-weight: bolder;">RESOURCES</header></li>
+                      <li class="nav-item"><a class="nav-link" href="">Inspire</a> </li>
+                      <li class="nav-item"><a class="nav-link" href="">Service Price</a> </li>
+                      <li class="nav-item"><a class="nav-link" href="">Compare Packages</a> </li>
+                      <li class="nav-item"><a class="nav-link" href=""> Designers List</a></li>
+                      <li class="nav-item"><a class="nav-link" href="">About us</a> </li>
+                      <li class="nav-item"><a class="nav-link" href=""> How To Register</a> </li>
+                      <li class="nav-item"><a class="nav-link" href=""> My Account</a> </li>
+                      <li class="nav-item"><a class="nav-link" href=""> Terms & Condition </a></li>
+                      <li class="nav-item"><a class="nav-link" href=""> My IP</a></li>
+                  </ul>
+             
+            </div>
+        </div>
+  
+        <hr>
+  
+           <br>
+           <p style="margin: 0px;text-align: center;color: gray;float: 18px; "> Yegara Host | Website Updated on February 2023 </p>
+           <br>
+        
+  
+      </footer>
+  
+
+
+
+</body>
+</html>

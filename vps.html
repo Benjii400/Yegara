@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/favicon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <title>VPS Hosting - Affordable Linux Vertual Private Server | Yegara Host</title>
+</head>
+
+
+<style>
+.footer a:hover {
+    box-shadow: inset 0 0 0 5em rgba(255, 255, 255, 0.3);
+    color: white;
+    border-radius: 10px;
+}
+
+.footer a {
+    color: white;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width:800px) {
+
+    #no-more-table tbody,
+    #no-more-table tr,
+    #no-more-table td {
+        display: block;
+    }
+
+    #no-more-table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    #no-more-table td {
+        position: relative;
+        padding-left: 50%;
+    }
+
+    #no-more-table td:before {
+        content: attr(data-title);
+        position: absolute;
+        left: 6px;
+        font-weight: bold;
+    }
+
+}
+</style>
+
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg  " style="background-color: rgba(31,32,70,255)">
+
+        <a class="navbar-brand " href="#"><img style="margin-left: 35px;" src="images/header_light_434x120.png"
+                width="220px" alt=""></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#NAV">
+            <span class="navbar-toggler-icon" style="border: 5px solid black;background-color: white;"></span>
+        </button>
+
+        <div class="container-fluid" style="display: block;" id="NAV">
+            <div class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav " style="font-size: 15px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="" style="color: white;">Support Chat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="" style="color: white;">Serices Status</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="collapse navbar-collapse justify-content-end" id="NAV">
+                <ul class="navbar-nav " style="margin-right: 0px; font-size: 15px;color: white;">
+                    <li class="nav-item" style="margin-right: 30px;">
+                        <a class="nav-link" href="index.html" style="color: white;">WEB HOSTING</a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 30px;">
+                        <a class="nav-link" href="vps.html" style="color: white;">VPS</a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 30px;">
+                        <a class="nav-link" href="smsapi.html" style="color: white;">SMS API</a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 30px;">
+                        <a class="nav-link" href="" style="color: white;">PRICE</a>
+                    </li>
+                    <li class="nav-item dropdown " style="margin-right: 30px;">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            style="color: white;">HOW TO</a>
+                        <ul class="dropdown-menu dropstart">
+                            <li><a class="dropdown-item" href="#">Buy domain and Hostinf</a></li>
+                            <li><a class="dropdown-item" href="#">Buy hosting Only</a></li>
+                            <li><a class="dropdown-item" href="#">Transfer to yegara</a></li>
+                            <li><a class="dropdown-item" href="#">Use SMS GETWAY /API </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" style="margin-right: 30px;">
+                        <button class="bg-warning mt-2" style="width: 100px;height: 30px;border-radius: 7px;"> Login
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid " style="background-color:  rgba(31,32,70,255);color: white;">
+        <div class="row">
+            <div class="col-lg-8" style="margin-top: 80px; margin-left: 10px;max-width: 800px;">
+                <h1 style="font-size: 49px;">EASY, FAST, AND FLEXIBLE VIRTUAL PRIVATE SERVER (VPS)</h1>
+                <p style="margin: 20px;font-size: 20px;">A balanced array of resources that support a wide range of
+                    cloud applications. From personal projects to enterprise applications, it can handle it.</p>
+                <img class="img img-fluid mt-3" src="images/powered_by_digital_ocean.png" width="250px" alt="">
+            </div>
+            <div class="col-lg-4"
+                style="background-color: white;border-radius: 10px;margin-top: 80px;color: gray;text-align: center;">
+                <h5 style="margin-top: 30px;">Start building today</h5>
+                <p>Deploy your Droplets and get a reliable connection and flat pricing across 8 data center regions.</p>
+                <br>
+                <ul style="list-style: none;">
+                    <li>Root Access</li>
+                    <li>Dedicated IP</li>
+                    <li>Global availability</li>
+                </ul>
+                <div class="d-grid" style="margin:20px;">
+                    <button style="margin-bottom: 40px;height: 50px;color: gray;font-weight: bolder;"
+                        class="btn btn-warning">
+                        Order Now
+                    </button>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </div>
+
+    <div class="container-fluid" style="background-color: beige;">
+        <div class="container-fluid ">
+            <h2 class="mx-auto d-block" style="max-width: 700px;text-align: center;color: grey;padding-top: 80px;">
+                DEPLOY YOUR CLOUD VPS WITH ANY OF THESE AVAILABLE DISTRIBUTIONS</h2>
+            <p style="text-align: center;color: grey">Save time by building on the OS that suits your needs.</p>
+            <div class="container-fluid  " style="max-width:1000px;margin-top: 50px;">
+                <div class="row ">
+                    <div class="col-sm">
+                        <img class=" img img-fluid  mx-auto " src="images/u.png" alt="">
+                        <h5>Ubuntu</h5>
+                    </div>
+                    <div class="col-sm">
+                        <img class="img img-fluid" src="images/f.png" alt="">
+                        <h5>Fedora</h5>
+                    </div>
+                    <div class="col-sm">
+                        <img class="img img-fluid" src="images/d.png" alt="">
+                        <h5>Debian</h5>
+                    </div>
+                    <div class="col-sm">
+                        <img class="img img-fluid" src="images/c.png" alt="">
+                        <h5>CentOS</h5>
+                    </div>
+                    <div class="col-sm">
+                        <img class="img img-fluid" src="images/r.png" alt="">
+                        <h5>Rocky Linux</h5>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <h2 class="mx-auto d-block" style="max-width: 700px;text-align: center;color: grey;padding-top: 80px;">
+            Transparent and Predictable Pricing</h2>
+        <p style="text-align: center;color: grey">From personal projects to complex apps, scale with confidence and
+            predictable VPS pricing.</p><br><br>
+
+        <table class="table table-striped table-hover table-responsive border"
+            style="font-size: 20px;border-radius: 10px;padding: 20px;" id="no-more-table">
+            <thead style="background-color: lightgray;color: darkgray;font-weight: bold;font-size: 25px;">
+                <tr>
+                    <td>CPU Model</td>
+                    <td>CPU Cores</td>
+                    <td>Transfer</td>
+                    <td>Memory</td>
+                    <td>Storage</td>
+                    <td>Monthly Price</td>
+                    <td>
+
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-title="CPU Model">Regular Intel with SSD</td>
+                    <td data-title="CPU Cores">1 CPU</td>
+                    <td data-title="Transfer">500 GB</td>
+                    <td data-title="Memory">512 MB</td>
+                    <td data-title="Storage">10 GB</td>
+                    <td data-title="Monthly Price">450 Birr</td>
+                    <td data-title="">
+                        <div class="d-grid">
+                            <button style="height: 50px;color: gray;font-weight: bolder;" class="btn btn-warning">
+                                Order Now
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="CPU Model">Regular Intel with SSD</td>
+                    <td data-title="CPU Cores">1 CPU</td>
+                    <td data-title="Transfer">1 TB</td>
+                    <td data-title="Memory">1 GB</td>
+                    <td data-title="Storage">25 GB</td>
+                    <td data-title="Monthly Price">650 Birr</td>
+                    <td data-title="">
+                        <div class="d-grid">
+                            <button style="height: 50px;color: gray;font-weight: bolder;" class="btn btn-warning">
+                                Order Now
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="CPU Model">Premium AMD with NVMe SSD</td>
+                    <td data-title="CPU Cores">1 CPU</td>
+                    <td data-title="Transfer">1 TB</td>
+                    <td data-title="Memory">1 GB</td>
+                    <td data-title="Storage">25 GB</td>
+                    <td data-title="Monthly Price">750 Birr</td>
+                    <td data-title="">
+                        <div class="d-grid">
+                            <button style="height: 50px;color: gray;font-weight: bolder;" class="btn btn-warning">
+                                Order Now
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="CPU Model">Regular Intel with SSD</td>
+                    <td data-title="CPU Cores">1 CPU</td>
+                    <td data-title="Transfer">2 TB</td>
+                    <td data-title="Memory">2 GB</td>
+                    <td data-title="Storage">50 GB</td>
+                    <td data-title="Monthly Price">1,300 Birr</td>
+                    <td data-title="">
+                        <div class="d-grid">
+                            <button style="height: 50px;color: gray;font-weight: bolder;" class="btn btn-warning">
+                                Order Now
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="CPU Model">Premium AMD with NVMe SSD</td>
+                    <td data-title="CPU Cores">1 CPU</td>
+                    <td data-title="Transfer">2 TB</td>
+                    <td data-title="Memory">2 GB</td>
+                    <td data-title="Storage">50 GB</td>
+                    <td data-title="Monthly Price">1,500 Birr</td>
+                    <td data-title="">
+                        <div class="d-grid">
+                            <button style="height: 50px;color: gray;font-weight: bolder;" class="btn btn-warning">
+                                Order Now
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="CPU Model">Premium AMD with NVMe SSD</td>
+                    <td data-title="CPU Cores">2 CPU</td>
+                    <td data-title="Transfer">3 TB</td>
+                    <td data-title="Memory">2 GB</td>
+                    <td data-title="Storage">60 GB</td>
+                    <td data-title="Monthly Price">2,300 Birr</td>
+                    <td data-title="">
+                        <div class="d-grid">
+                            <button style="height: 50px;color: gray;font-weight: bolder;" class="btn btn-warning">
+                                Order Now
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="CPU Model">Regular Intel with SSD</td>
+                    <td data-title="CPU Cores">2 CPU</td>
+                    <td data-title="Transfer">4 TB</td>
+                    <td data-title="Memory">4 GB</td>
+                    <td data-title="Storage">80 GB</td>
+                    <td data-title="Monthly Price">2,500 Birr</td>
+                    <td data-title="">
+                        <div class="d-grid">
+                            <button style="height: 50px;color: gray;font-weight: bolder;" class="btn btn-warning">
+                                Order Now
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="CPU Model">Premium AMD with NVMe SSD</td>
+                    <td data-title="CPU Cores">2 CPU</td>
+                    <td data-title="Transfer">4 TB</td>
+                    <td data-title="Memory">4 GB</td>
+                    <td data-title="Storage">80 GB</td>
+                    <td data-title="Monthly Price">3000 Birr</td>
+                    <td data-title="">
+                        <div class="d-grid">
+                            <button style="height: 50px;color: gray;font-weight: bolder;" class="btn btn-warning">
+                                Order Now
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="CPU Model">Regular Intel with SSD</td>
+                    <td data-title="CPU Cores">4 CPU</td>
+                    <td data-title="Transfer">5 TB</td>
+                    <td data-title="Memory">8 GB</td>
+                    <td data-title="Storage">160 GB</td>
+                    <td data-title="Monthly Price">5,000 Birr</td>
+                    <td data-title="">
+                        <div class="d-grid">
+                            <button style="height: 50px;color: gray;font-weight: bolder;" class="btn btn-warning">
+                                Order Now
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="CPU Model">Premium AMD with NVMe SSD</td>
+                    <td data-title="CPU Cores">4 CPU</td>
+                    <td data-title="Transfer">5 TB</td>
+                    <td data-title="Memory">8 GB</td>
+                    <td data-title="Storage">160 GB</td>
+                    <td data-title="Monthly Price">5,900 Birr</td>
+                    <td data-title="">
+                        <div class="d-grid">
+                            <button style="height: 50px;color: gray;font-weight: bolder;" class="btn btn-warning">
+                                Order Now
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="CPU Model">Regular Intel with SSD</td>
+                    <td data-title="CPU Cores">8 CPU</td>
+                    <td data-title="Transfer">6 TB</td>
+                    <td data-title="Memory">16 GB</td>
+                    <td data-title="Storage">320 GB</td>
+                    <td data-title="Monthly Price">11,000 Birr</td>
+                    <td data-title="">
+                        <div class="d-grid">
+                            <button style="height: 50px;color: gray;font-weight: bolder;" class="btn btn-warning">
+                                Order Now
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="CPU Model">Premium AMD with NVMe SSD</td>
+                    <td data-title="CPU Cores">8 CPU</td>
+                    <td data-title="Transfer">6 TB</td>
+                    <td data-title="Memory">16 GB</td>
+                    <td data-title="Storage">320 GB</td>
+                    <td data-title="Monthly Price">14,000 Birr</td>
+                    <td data-title="">
+                        <div class="d-grid">
+                            <button style=" height: 50px;color: gray;font-weight: bolder;" class="btn btn-warning">
+                                Order Now
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-title="CPU Model">Build your Droplet</td>
+                    <td data-title="CPU Cores">+32 vCPUs</td>
+                    <td data-title="Transfer">+10 TB</td>
+                    <td data-title="Memory">+256 GB</td>
+                    <td data-title="Storage">+10 TB</td>
+                    <td data-title="Monthly Price">custom</td>
+                    <td data-title="">
+                        <div class="d-grid">
+                            <button style=" height: 50px;color: black;font-weight: bold;background-color: white;"
+                                class="btn border">
+                                Contact Us
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br><br>
+    </div>
+
+
+    <div class="container-fluid" style="background-color: rgb(238, 238, 238);">
+        <div class="container" style="padding-top: 100px;">
+            <h2>Frequently asked questions ... </h2>
+            <hr><br><br>
+
+            <h4>What are VPS? </h4>
+            <p>VPS are Linux-based virtual machines (VMs) that run on top of virtualized hardware. Each VPS you create
+                is a new server you can use, either standalone or as part of a larger, cloud-based infrastructure.</p>
+            <hr><br><br>
+
+            <h4>Can I resize my VPS?</h4>
+            <p>Yes. Resizing a VPS, also known as vertical scaling, increases the amount of CPU and RAM available to a
+                VPS and permanently increases the size of a VPS’s disk.</p>
+            <hr><br><br>
+
+            <h4>Will I be billed if I power off my VPS?</h4>
+            <p>Yes, when you power off your VPS, you are still billed for it. This is because your disk space, CPU, RAM,
+                and IP address are all reserved, even while powered off. Therefore, charges are made until you destroy
+                the instance.</p>
+            <hr><br><br>
+
+            <h4>Who can use VPS?</h4>
+            <p>This is For advanced developers who know how to manage a server or want to learn by their own. This is
+                currently not on offer for business and enterprises.</p>
+            <hr><br><br>
+
+            <h4>What level of support is included?</h4>
+            <p>We Provide unmanaged VPS hosting, designed for experienced developers seeking full control over their
+                server. With root access to your VPS, you will have autonomy in installing your preferred Operating
+                System (OS) and applications to suit your operating specifications. Our support team will be here to
+                help you with all network and hardware related issues.</p>
+            <hr><br><br>
+
+
+        </div>
+    </div>
+
+
+    <div class="container-fluid" style="background-color:  rgba(31,32,70,255); color: white;">
+        <div class="container-fluid" style="padding-top:150px;">
+            <div class="row" style="text-align: center;">
+                <div class="col-lg" style="text-align: left;">
+                    <h1 style="padding-bottom:25px">HAVE QUESTIONS? TALK TO US !</h1>
+                    <p >Talk to a member of our team today ,If you need more information or support on your account, you
+                        can call anytime</p>
+                </div>
+                <div class="col-lg">
+                    <img class="img-fluid " src="images/telephone-symbol-button.png" style="padding-bottom:25px" width="70px" alt="">
+                    <h2 style="padding:18px">INFORMATION</h2>
+                    <p>Get information on any of yegara Host solutions and services</p><br>
+                    <h2>0960 17 00 00</h2>
+                </div>
+                <div class="col-lg">
+                    <img class="img-fluid " src="images/telephone-symbol-button.png" style="padding-bottom:25px" width="70px" alt="">
+                    <h2 style="padding:18px">SUPPORT</h2>
+                    <p>Get in touch with customer support for assistance with your service</p><br>
+                    <h2>0960 17 00 00</h2>
+                </div>
+                <div class="col-lg">
+                    <img class="img-fluid " src="images/telephone-symbol-button.png" style="padding-bottom:25px" width="70px" alt="">
+                    <h2 style="padding:18px">CHAT</h2>
+                    <p>Chat with us on telegram to get information or support</p><br>
+                    <button style="width: 200px;padding: 8px; background-color: white;color: gray;font-weight: bold;"
+                        class="btn btn-white">open telegram</button>
+                </div>
+            </div>
+            <br><br><br><br><br><br>
+        </div>
+    </div>
+
+
+    <footer class="container-fluid footer" style="background-color: rgb(63, 63, 77);">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 mt-6" style="margin-top: 30px;max-width: 400px;color: rgb(148, 148, 168);">
+                    <img style="margin-bottom:  20px;" class="img img-fluid" src="images/header_light_434x120.png"
+                        width="200px" alt="">
+                    <p>Yegara (የጋራ) Web Host : From website design companies in Ethiopia to an individual looking for a
+                        fully loaded website hosting plan affordable and on a budget, Yegara (የጋራ) provides you with
+                        everything you need for your website right here in Addis Ababa.</p>
+                    <br>
+                    <p>We accept Payment Through The Following Ethiopian Banks. You can use your Mobile Banking,
+                        Internet Banking or make a Cash Deposit:</p>
+                    <br> <img class="img img-fluid" src="images/all_banks.webp" alt="" width="450px">
+                </div>
+                <div class="col-lg-3 mt-6" style="margin-top: 50px">
+
+                    <ul class="nav flex-column" style="max-width: 300px;color: black;margin-left: 30px;">
+                        <li>
+                            <header style="margin-bottom: 10px;color: gray;font-weight: bolder;">CONNECT</header>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="">FACEBOOK | @yegarawebhost </a> </li>
+                        <li class="nav-item"><a class="nav-link" href="">TELEGRAM | @yegarawebhost </a> </li>
+                        <li class="nav-item"><a class="nav-link" href="">info@yegara.com</a> </li>
+                        <li class="nav-item"><a class="nav-link" href=""> 0960 17 17 17 </a></li>
+                        <li class="nav-item"><a class="nav-link" href=""> Yeha comrecial center <br> 2nd Floor , Stadium
+                                <br> Addis Ababa , Ethiopia</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-lg-3 mt-6" style="margin-top: 50px;margin-left: 0px;">
+                    <ul class="nav flex-column" style="max-width: 300px;color: black;margin-left: 30px;">
+                        <li class="nav-item">
+                            <header style="margin-bottom: 10px;color: gray;font-weight: bolder;">SERVICES</header>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="">Shared Hosting</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="">Wordpress new</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="">SMS API FREE</a> </li>
+                        <li class="nav-item"><a class="nav-link" href=""> Business Emails </a></li>
+                        <li class="nav-item"><a class="nav-link" href=""> Free SSL certificate </a> </li>
+                        <li class="nav-item"><a class="nav-link" href="">Order cPanel </a> </li>
+                        <li class="nav-item"><a class="nav-link" href="">Domain Name Registration</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="">Transfer Domain </a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 mt-6 " style="margin-top: 50px;margin-left: 0px;">
+                    <ul class="nav flex-column " style="max-width: 300px;color: black;margin-left: 30px;">
+                        <li>
+                            <header style="margin-bottom: 10px;color: gray;font-weight: bolder;">RESOURCES</header>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="">Inspire</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="">Service Price</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="">Compare Packages</a> </li>
+                        <li class="nav-item"><a class="nav-link" href=""> Designers List</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">About us</a> </li>
+                        <li class="nav-item"><a class="nav-link" href=""> How To Register</a> </li>
+                        <li class="nav-item"><a class="nav-link" href=""> My Account</a> </li>
+                        <li class="nav-item"><a class="nav-link" href=""> Terms & Condition </a></li>
+                        <li class="nav-item"><a class="nav-link" href=""> My IP</a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <hr>
+
+            <br>
+            <p style="margin: 0px;text-align: center;color: gray;float: 18px; "> Yegara Host | Website Updated on
+                February 2023 </p>
+            <br>
+
+
+    </footer>
+
+
+
+</body>
+
+</html>
